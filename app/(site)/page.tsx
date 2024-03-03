@@ -12,9 +12,11 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import AboutCompany from "@/components/AboutCompany";
+import AboutCompanys from "./aboutcompany/page";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "5techG",
   description: "This is Home for Solid Pro",
   // other metadata
 };
@@ -25,16 +27,15 @@ export default function Home() {
       <Hero />
       <Brands />
       <Feature />
-      <About />
       <FeaturesTab />
+      <Blog />
+      <About />
       <FunFact />
       <Integration />
       <CTA />
-      <FAQ />
       <Testimonial />
-      <Pricing />
       <Contact />
-      <Blog />
+      
     </main>
   );
 }

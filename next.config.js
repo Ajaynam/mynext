@@ -3,12 +3,13 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  distDir: 'build',
   images: {
-    domains: ["localhost"],
+    domains: ["localhost" , "*"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.sanity.io",
+        hostname: "cdn.sanity.io" ,
         port: "",
       },
     ],
@@ -16,3 +17,8 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+
+// module.exports = {
+//   distDir: 'build', // Change 'build' to the desired output directory
+// }
